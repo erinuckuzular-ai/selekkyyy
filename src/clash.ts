@@ -36,14 +36,19 @@ export async function openClash(ctx: { decks: Record<Side, Deck>; floor: { crowd
 
   ws?.close(); ws = new WebSocket(`${CLASH_BASE.replace(/^http/, 'ws')}/room/${code}`);
   const nick = prefs.nick || 'anon';
-  ws.onopen = () => { const wantSelecta = confirm('Step up as a selecta? Cancel to join the crowd.'); send({ t: 'join', nick, role: wantSelecta ? 'selecta' : 'crowd' }); };
+  ws.onopen = () => {
+    act.innerHTML = ''; const pick = (role: 'selecta' | 'crowd') => { send({ t: 'join', nick, role }); act.innerHTML = ''; };
+    const a1 = h('<button class="k hot">STEP UP (SELECTA)</button>'); a1.addEventListener('click', () => pick('selecta'));
+    const a2 = h('<button class="k">JOIN THE CROWD</button>'); a2.addEventListener('click', () => pick('crowd'));
+    act.append(a1, a2); st.innerHTML = '<div class="crowd">connected. pick a role.</div>';
+  };
   ws.onclose = () => { addLog('disconnected'); };
   ws.onmessage = ev => {
     const m = JSON.parse(ev.data);
     if (m.t === 'you') { me = m; toast(m.role === 'selecta' ? 'YOU ARE IN THE BOOTH' : 'YOU ARE THE CROWD'); }
-    if (m.t === 'horn') { if (m.kind === 'siren') { siren.start(1); setTimeout(() => siren.stop(), 900); } if (m.kind === 'horn') airhorn(); if (m.kind === 'pullup') pullUp(); ctx.floor.crowdShout(`${m.from}: ${m.kind.toUpperCase()}`); }
+    if (m.t === 'horn') { if (m.kind === 'siren') { siren.start(0); setTimeout(() => siren.stop(), 1100); } if (m.kind === 'horn') airhorn(); if (m.kind === 'pullup') pullUp(); ctx.floor.crowdShout(`${m.from}: ${m.kind.toUpperCase()}`); }
     if (m.t === 'chat') { addLog(`${m.nick}: ${m.text}`); ctx.floor.crowdShout(m.text.slice(0, 24)); }
-    if (m.t === 'state') { state = m.state as State; render(); sync(); }
+    if (m.t === 'state') { state = m.state as State; if (me) render(); sync(); }
   };
   function send(o: unknown) { if (ws?.readyState === 1) ws.send(JSON.stringify({ ...(o as object), nick })); }
   function mySide(): Side | null { if (!state || !me) return null; if (state.selectas.A?.cid === me.cid) return 'A'; if (state.selectas.B?.cid === me.cid) return 'B'; return null; }

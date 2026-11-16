@@ -56,25 +56,56 @@ export function needleDrop() {
   const og = c.createGain(); og.gain.setValueAtTime(0.5, t); og.gain.exponentialRampToValueAtTime(0.001, t + 0.3); o.connect(og).connect(master); o.start(t); o.stop(t + 0.35);
 }
 
-let sirenNodes: { o1: OscillatorNode; o2: OscillatorNode; lfo: OscillatorNode; g: GainNode } | null = null;
+// ---- Dub siren: pulse oscillator, LFO sweep, pitch envelope, into a feedback echo with a dark lowpass in the loop.
+let echo: { input: GainNode } | null = null;
+function getEcho() {
+  if (echo) return echo; const c = ac();
+  const input = c.createGain(); const delay = c.createDelay(1.5); delay.delayTime.value = 0.36;
+  const fb = c.createGain(); fb.gain.value = 0.48; const lp = c.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1800;
+  const wet = c.createGain(); wet.gain.value = 0.7;
+  input.connect(master); input.connect(delay); delay.connect(lp).connect(fb).connect(delay); delay.connect(wet).connect(master);
+  echo = { input }; return echo;
+}
+export type SirenMode = 0 | 1 | 2 | 3;
+export const SIREN_NAMES = ['RISE', 'TWO-TONE', 'ZAP', 'WOBBLE'];
+let sn: { osc: OscillatorNode; sub: OscillatorNode; lfo: OscillatorNode; depth: GainNode; g: GainNode; filt: BiquadFilterNode; mode: SirenMode; base: number } | null = null;
 export const siren = {
-  start(mode: 0 | 1 | 2 = 0) {
-    if (sirenNodes) return; const c = ac(); const t = c.currentTime;
-    const g = c.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.18, t + 0.03); g.connect(master);
-    const o1 = c.createOscillator(); o1.type = 'square'; const o2 = c.createOscillator(); o2.type = 'square';
-    const base = [520, 680, 440][mode]; o1.frequency.value = base; o2.frequency.value = base * 1.005;
-    const lfo = c.createOscillator(); lfo.type = ['triangle', 'square', 'sawtooth'][mode] as OscillatorType; lfo.frequency.value = [5, 9, 2.5][mode];
-    const depth = c.createGain(); depth.gain.value = [180, 260, 320][mode]; lfo.connect(depth); depth.connect(o1.frequency); depth.connect(o2.frequency);
-    const lp = c.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 2400;
-    o1.connect(lp); o2.connect(lp); lp.connect(g); o1.start(); o2.start(); lfo.start();
-    sirenNodes = { o1, o2, lfo, g };
+  active: () => !!sn,
+  start(mode: SirenMode = 0) {
+    if (sn) return; const c = ac(); const t = c.currentTime; const out = getEcho().input;
+    const g = c.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.16, t + 0.015);
+    const filt = c.createBiquadFilter(); filt.type = 'lowpass'; filt.frequency.value = 2600; filt.Q.value = 2;
+    const osc = c.createOscillator(); osc.type = 'square'; const sub = c.createOscillator(); sub.type = 'square';
+    const base = [420, 620, 1400, 520][mode];
+    osc.frequency.setValueAtTime(base * (mode === 2 ? 1 : 0.5), t); osc.frequency.exponentialRampToValueAtTime(base, t + (mode === 2 ? 0.01 : 0.25));
+    sub.frequency.setValueAtTime(base / 2, t); sub.detune.value = 7;
+    const lfo = c.createOscillator(); const depth = c.createGain();
+    if (mode === 0) { lfo.type = 'sawtooth'; lfo.frequency.value = 1.6; depth.gain.value = 260; }
+    if (mode === 1) { lfo.type = 'square'; lfo.frequency.value = 3.2; depth.gain.value = 160; }
+    if (mode === 2) { lfo.type = 'sawtooth'; lfo.frequency.value = 11; depth.gain.value = -900; }
+    if (mode === 3) { lfo.type = 'triangle'; lfo.frequency.value = 6; depth.gain.value = 220; }
+    lfo.connect(depth); depth.connect(osc.frequency); depth.connect(sub.frequency);
+    osc.connect(filt); sub.connect(filt); filt.connect(g); g.connect(out);
+    osc.start(t); sub.start(t); lfo.start(t);
+    sn = { osc, sub, lfo, depth, g, filt, mode, base };
+    if (mode === 2) setTimeout(() => siren.stop(), 260); // zaps are one-shots
   },
-  stop() { if (!sirenNodes) return; const c = ac(); const { o1, o2, lfo, g } = sirenNodes; sirenNodes = null; g.gain.setTargetAtTime(0.0001, c.currentTime, 0.04); setTimeout(() => { o1.stop(); o2.stop(); lfo.stop(); }, 300); },
+  // live control while held: x = sweep rate (0..1), y = pitch (0..1, up = higher)
+  bend(x: number, y: number) {
+    if (!sn) return; const c = ac(); const t = c.currentTime;
+    const f = sn.base * Math.pow(2, (y - 0.5) * 2); sn.osc.frequency.setTargetAtTime(f, t, 0.03); sn.sub.frequency.setTargetAtTime(f / 2, t, 0.03);
+    const rate = [0.4 + x * 6, 1 + x * 10, 4 + x * 20, 1 + x * 14][sn.mode]; sn.lfo.frequency.setTargetAtTime(rate, t, 0.05);
+    sn.filt.frequency.setTargetAtTime(900 + y * 3500, t, 0.05);
+  },
+  stop() {
+    if (!sn) return; const c = ac(); const { osc, sub, lfo, g } = sn; sn = null;
+    g.gain.setTargetAtTime(0.0001, c.currentTime, 0.03); setTimeout(() => { osc.stop(); sub.stop(); lfo.stop(); }, 250);
+  },
 };
 
 export function airhorn() {
   const c = ac(); const t = c.currentTime; const g = c.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.22, t + 0.02); g.gain.setValueAtTime(0.22, t + 0.55); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.9);
-  const lp = c.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1800; lp.connect(g).connect(master);
+  const lp = c.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1800; lp.connect(g).connect(getEcho().input);
   for (const f of [233, 311, 466]) for (const det of [-6, 0, 7]) { const o = c.createOscillator(); o.type = 'sawtooth'; o.detune.value = det; o.frequency.setValueAtTime(f * 1.06, t); o.frequency.exponentialRampToValueAtTime(f, t + 0.12); o.frequency.setValueAtTime(f, t + 0.5); o.frequency.exponentialRampToValueAtTime(f * 0.94, t + 0.9); o.connect(lp); o.start(t); o.stop(t + 0.95); }
 }
 

@@ -36,7 +36,7 @@ export const onRequest: PagesFunction<Env> = async ctx => {
   if (!og) return new Response(index.body, index);
   const canonical = `${url.origin}${p}`;
   return new HTMLRewriter()
-    .on('title', { element(e) { e.setInnerContent(`${og!.title} · Selekkyyy`); } })
+    .on('title', { element(e) { e.setInnerContent(og!.title.includes('Selekkyyy') ? og!.title : `${og!.title} · Selekkyyy`); } })
     .on('meta[property="og:title"]', { element(e) { e.setAttribute('content', og!.title); } })
     .on('meta[property="og:description"], meta[name="description"]', { element(e) { e.setAttribute('content', og!.desc); } })
     .on('meta[property="og:image"]', { element(e) { e.setAttribute('content', og!.image); } })

@@ -3,7 +3,7 @@ import { Deck } from './deck';
 import { players, next } from './player';
 import { bag, queue } from './store';
 import { parse, go, url } from './router';
-import { airhorn, pullUp, siren, surface, unlockAudio, blip } from './audio';
+import { airhorn, pullUp, siren, surface, unlockAudio, blip, SIREN_NAMES, type SirenMode } from './audio';
 import { rigs, rigById } from './rigs';
 import { createFloor } from './shopfloor';
 import { startGame } from './game';
@@ -81,11 +81,13 @@ $('#nextBtn').addEventListener('click', next);
 
 // ---------- Toys ----------
 $<HTMLInputElement>('#noise').addEventListener('input', e => surface.set(Number((e.target as HTMLInputElement).value)));
-const sirenBtn = $('#sirenBtn'); let sirenMode: 0 | 1 | 2 = 0;
-const sirenOn = (e: Event) => { e.preventDefault(); sirenBtn.classList.add('held'); siren.start(sirenMode); floor.crowdShout('SIREN'); };
+const sirenBtn = $('#sirenBtn'); let sirenMode: SirenMode = 0;
+const sirenOn = (e: PointerEvent) => { e.preventDefault(); sirenBtn.setPointerCapture(e.pointerId); sirenBtn.classList.add('held'); siren.start(sirenMode); floor.crowdShout('SIREN'); };
+const sirenMove = (e: PointerEvent) => { if (!siren.active()) return; const r = sirenBtn.getBoundingClientRect(); siren.bend(Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)), Math.max(0, Math.min(1, 1 - (e.clientY - r.top) / r.height))); };
 const sirenOff = () => { sirenBtn.classList.remove('held'); siren.stop(); };
-sirenBtn.addEventListener('pointerdown', sirenOn); sirenBtn.addEventListener('pointerup', sirenOff); sirenBtn.addEventListener('pointerleave', sirenOff);
-sirenBtn.addEventListener('contextmenu', e => { e.preventDefault(); sirenMode = ((sirenMode + 1) % 3) as 0 | 1 | 2; toast(`SIREN ${['WOBBLE', 'FAST', 'SWEEP'][sirenMode]}`); });
+sirenBtn.addEventListener('pointerdown', sirenOn); sirenBtn.addEventListener('pointermove', sirenMove); sirenBtn.addEventListener('pointerup', sirenOff); sirenBtn.addEventListener('pointercancel', sirenOff);
+sirenBtn.addEventListener('contextmenu', e => { e.preventDefault(); sirenMode = ((sirenMode + 1) % 4) as SirenMode; sirenBtn.textContent = `SIREN · ${SIREN_NAMES[sirenMode]}`; });
+sirenBtn.title = 'Hold. Drag up/down for pitch, left/right for sweep speed. Right-click to change mode.';
 $('#hornBtn').addEventListener('click', () => { airhorn(); floor.crowdShout('BRAAAP'); });
 const doPullUp = () => { pullUp(); const d = deckA.isRunning() ? deckA : deckB; setTimeout(() => { d.player.seek(0); if (!d.isRunning()) d.start(); }, 500); floor.crowdShout('WHEEL!'); floor.keeperSay('pull up.'); };
 $('#pullBtn').addEventListener('click', doPullUp);
