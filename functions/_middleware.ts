@@ -29,7 +29,7 @@ export const onRequest: PagesFunction<Env> = async ctx => {
     og = { title: 'Selekkyyy Radio', desc: 'The whole shop on shuffle. Soul, jazz, dub, disco, library.', image: `${url.origin}/og.png` };
   }
 
-  const isDeep = /^\/(t|crate|bag)\//.test(p) || p === '/radio';
+  const isDeep = /^\/(t|crate|bag|clash)\//.test(p) || p === "/radio";
   if (!isDeep) return ctx.next();
 
   const index = await ctx.env.ASSETS.fetch(new URL('/', url.origin));

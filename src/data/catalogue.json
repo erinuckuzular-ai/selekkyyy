@@ -56,7 +56,10 @@
    "crate": "library",
    "decade": "70s",
    "seconds": 216,
-   "order": 0
+   "order": 0,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "JHnq_X-8ZBg",
@@ -65,7 +68,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 170,
-   "order": 1
+   "order": 1,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "55YvIYqiTNg",
@@ -74,7 +80,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 224,
-   "order": 2
+   "order": 2,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "kaOKC-SQFkU",
@@ -83,7 +92,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 137,
-   "order": 3
+   "order": 3,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "LwQ2xy4fTHo",
@@ -92,7 +104,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 218,
-   "order": 4
+   "order": 4,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "ipXFgZ-RZnM",
@@ -101,7 +116,10 @@
    "crate": "library",
    "decade": "70s",
    "seconds": 145,
-   "order": 5
+   "order": 5,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "07caLJBNFZE",
@@ -110,7 +128,10 @@
    "crate": "library",
    "decade": "60s",
    "seconds": 200,
-   "order": 6
+   "order": 6,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "bEO-FhcU-TA",
@@ -119,7 +140,10 @@
    "crate": "library",
    "decade": "60s",
    "seconds": 96,
-   "order": 7
+   "order": 7,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "akVOFVdkyX4",
@@ -128,7 +152,10 @@
    "crate": "disco",
    "decade": "70s",
    "seconds": 239,
-   "order": 8
+   "order": 8,
+   "size": 12,
+   "rpm": 45,
+   "kind": "12-inch single"
   },
   {
    "id": "_YYQ6kBrluo",
@@ -137,7 +164,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 158,
-   "order": 9
+   "order": 9,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "GRMxU2foMvY",
@@ -146,7 +176,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 241,
-   "order": 10
+   "order": 10,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "Coc_4awiT54",
@@ -155,7 +188,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 250,
-   "order": 11
+   "order": 11,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "8-5L45p-Fkw",
@@ -164,7 +200,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 190,
-   "order": 12
+   "order": 12,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "mf1MNj-D9pE",
@@ -173,7 +212,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 190,
-   "order": 13
+   "order": 13,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "lK3vYP7_6XM",
@@ -182,7 +224,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 168,
-   "order": 14
+   "order": 14,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "M4svMCXEGJs",
@@ -191,7 +236,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 176,
-   "order": 15
+   "order": 15,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "pB0vTiMmZw0",
@@ -200,7 +248,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 210,
-   "order": 16
+   "order": 16,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "xkPkpVza9ss",
@@ -209,7 +260,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 234,
-   "order": 17
+   "order": 17,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "H0AV-RqiBeU",
@@ -218,7 +272,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 170,
-   "order": 18
+   "order": 18,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "UvwXxTmj-b4",
@@ -227,7 +284,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 273,
-   "order": 19
+   "order": 19,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "M1-P5Ap6wc8",
@@ -236,7 +296,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 230,
-   "order": 20
+   "order": 20,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "huP7W87n1D8",
@@ -245,7 +308,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 340,
-   "order": 21
+   "order": 21,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "aCuwJ7Q8B24",
@@ -254,7 +320,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 150,
-   "order": 22
+   "order": 22,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "zJhjZVtBADI",
@@ -263,7 +332,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 161,
-   "order": 23
+   "order": 23,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "HbzR-wq88Ew",
@@ -272,7 +344,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 184,
-   "order": 24
+   "order": 24,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "2zDcf_d19Vs",
@@ -281,7 +356,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 233,
-   "order": 25
+   "order": 25,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "JgjJM3I8TSM",
@@ -290,7 +368,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 242,
-   "order": 26
+   "order": 26,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "XjLT0PJ4CDA",
@@ -299,7 +380,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 153,
-   "order": 27
+   "order": 27,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "mu3M95iLOoc",
@@ -308,7 +392,10 @@
    "crate": "disco",
    "decade": "70s",
    "seconds": 226,
-   "order": 28
+   "order": 28,
+   "size": 12,
+   "rpm": 45,
+   "kind": "12-inch single"
   },
   {
    "id": "auGTdjtRFb4",
@@ -317,7 +404,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 162,
-   "order": 29
+   "order": 29,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "9B0FOcXoeX4",
@@ -326,7 +416,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 176,
-   "order": 30
+   "order": 30,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "2cy_lN3aeis",
@@ -335,7 +428,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 168,
-   "order": 31
+   "order": 31,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "ow0bExBDTe8",
@@ -344,7 +440,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 156,
-   "order": 32
+   "order": 32,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "fisxvYxSnD0",
@@ -353,7 +452,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 237,
-   "order": 33
+   "order": 33,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "18lAqd9lEak",
@@ -362,7 +464,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 192,
-   "order": 34
+   "order": 34,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "OwdzVYyB338",
@@ -371,7 +476,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 202,
-   "order": 35
+   "order": 35,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "-huoTzQBPuk",
@@ -380,7 +488,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 206,
-   "order": 36
+   "order": 36,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "JrCiSXYWWrg",
@@ -389,7 +500,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 215,
-   "order": 37
+   "order": 37,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "lG-749ZRono",
@@ -398,7 +512,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 154,
-   "order": 38
+   "order": 38,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "F5gnYdXVh0M",
@@ -407,7 +524,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 238,
-   "order": 39
+   "order": 39,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "DmXbDb_f1Y4",
@@ -416,7 +536,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 200,
-   "order": 40
+   "order": 40,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "OziEljV3D-M",
@@ -425,7 +548,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 171,
-   "order": 41
+   "order": 41,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "ovdvcdgQiz4",
@@ -434,7 +560,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 235,
-   "order": 42
+   "order": 42,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "EM4_MR7O3Lw",
@@ -443,7 +572,10 @@
    "crate": "vault",
    "decade": "70s",
    "seconds": 208,
-   "order": 43
+   "order": 43,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "nsBqWGzF_yg",
@@ -452,7 +584,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 208,
-   "order": 44
+   "order": 44,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "mZYVboak-pg",
@@ -461,7 +596,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 195,
-   "order": 45
+   "order": 45,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "JC1ZWz_DfFY",
@@ -470,7 +608,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 173,
-   "order": 46
+   "order": 46,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "gMyjEF9ExFU",
@@ -479,7 +620,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 179,
-   "order": 47
+   "order": 47,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "O_0qzbqklEE",
@@ -488,7 +632,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 152,
-   "order": 48
+   "order": 48,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "OYT183pLxyg",
@@ -497,7 +644,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 194,
-   "order": 49
+   "order": 49,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "06Blvz0CJv4",
@@ -506,7 +656,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 160,
-   "order": 50
+   "order": 50,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "BD-mo934ybU",
@@ -515,7 +668,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 180,
-   "order": 51
+   "order": 51,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "n6ouzQ89RyI",
@@ -524,7 +680,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 161,
-   "order": 52
+   "order": 52,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "W7Fzh_2aMlo",
@@ -533,7 +692,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 215,
-   "order": 53
+   "order": 53,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "tAesV7AWLys",
@@ -542,7 +704,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 161,
-   "order": 54
+   "order": 54,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "73Lz84JH6nU",
@@ -551,7 +716,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 170,
-   "order": 55
+   "order": 55,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "3D55G33htss",
@@ -560,7 +728,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 141,
-   "order": 56
+   "order": 56,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "yzb1ufiwZNM",
@@ -569,7 +740,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 178,
-   "order": 57
+   "order": 57,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "C7gpr6FEdYo",
@@ -578,7 +752,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 194,
-   "order": 58
+   "order": 58,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "dYXKgcDPOj0",
@@ -587,7 +764,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 178,
-   "order": 59
+   "order": 59,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "ollQZukyQrY",
@@ -596,7 +776,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 189,
-   "order": 60
+   "order": 60,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "MV6OcK1POzY",
@@ -605,7 +788,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 257,
-   "order": 61
+   "order": 61,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "tarH7BEHPTg",
@@ -614,7 +800,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 184,
-   "order": 62
+   "order": 62,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "i09KSbg4wto",
@@ -623,7 +812,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 399,
-   "order": 63
+   "order": 63,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "tbKIVRuSjyA",
@@ -632,7 +824,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 148,
-   "order": 64
+   "order": 64,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "w0knyMLWevg",
@@ -641,7 +836,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 244,
-   "order": 65
+   "order": 65,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "Av7QHGndD_8",
@@ -650,7 +848,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 196,
-   "order": 66
+   "order": 66,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "45qQgPmPFAs",
@@ -659,7 +860,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 150,
-   "order": 67
+   "order": 67,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "1uaWMBaI02E",
@@ -668,7 +872,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 196,
-   "order": 68
+   "order": 68,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "yynf9FdUTj0",
@@ -677,7 +884,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 162,
-   "order": 69
+   "order": 69,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "C6lD7GLh7Y8",
@@ -686,7 +896,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 182,
-   "order": 70
+   "order": 70,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "a_gN-BeOv-Y",
@@ -695,7 +908,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 186,
-   "order": 71
+   "order": 71,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "kqsHjTG2268",
@@ -704,7 +920,10 @@
    "crate": "jazz",
    "decade": "40s",
    "seconds": 186,
-   "order": 72
+   "order": 72,
+   "size": 10,
+   "rpm": 78,
+   "kind": "shellac 78"
   },
   {
    "id": "vV2I9CAye6s",
@@ -713,7 +932,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 171,
-   "order": 73
+   "order": 73,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "lfSMpBG2TTo",
@@ -722,7 +944,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 142,
-   "order": 74
+   "order": 74,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "kNpPqusIhao",
@@ -731,7 +956,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 272,
-   "order": 75
+   "order": 75,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "C0yfyQWFspg",
@@ -740,7 +968,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 151,
-   "order": 76
+   "order": 76,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "iBcPrztbYTA",
@@ -749,7 +980,10 @@
    "crate": "jazz",
    "decade": "50s",
    "seconds": 169,
-   "order": 77
+   "order": 77,
+   "size": 10,
+   "rpm": 33,
+   "kind": "10-inch LP"
   },
   {
    "id": "S0TSFPawP2w",
@@ -758,7 +992,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 146,
-   "order": 78
+   "order": 78,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "0b0ndV52jxI",
@@ -767,7 +1004,10 @@
    "crate": "soul-70s",
    "decade": "70s",
    "seconds": 213,
-   "order": 79
+   "order": 79,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "fxlW78vaHBw",
@@ -776,7 +1016,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 162,
-   "order": 80
+   "order": 80,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "oLs_CbpgDoA",
@@ -785,7 +1028,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 217,
-   "order": 81
+   "order": 81,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "RR0K4J4UpH0",
@@ -794,7 +1040,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 149,
-   "order": 82
+   "order": 82,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "Otm_Qzs5qSs",
@@ -803,7 +1052,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 163,
-   "order": 83
+   "order": 83,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "AWxH5VOQaa4",
@@ -812,7 +1064,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 134,
-   "order": 84
+   "order": 84,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "HThzTlnSSSE",
@@ -821,7 +1076,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 183,
-   "order": 85
+   "order": 85,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "IVKg4MSKJOw",
@@ -830,7 +1088,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 174,
-   "order": 86
+   "order": 86,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "Wyrw-5a8c20",
@@ -839,7 +1100,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 192,
-   "order": 87
+   "order": 87,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "NOyVJzwzMbA",
@@ -848,7 +1112,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 210,
-   "order": 88
+   "order": 88,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "Mj4Zj-l7nMA",
@@ -857,7 +1124,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 166,
-   "order": 89
+   "order": 89,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "yAv8rH-GZP0",
@@ -866,7 +1136,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 188,
-   "order": 90
+   "order": 90,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "miepMJ7nsE0",
@@ -875,7 +1148,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 276,
-   "order": 91
+   "order": 91,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "xudLkt4MQgw",
@@ -884,7 +1160,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 163,
-   "order": 92
+   "order": 92,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "9eYM6YSUDTs",
@@ -893,7 +1172,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 177,
-   "order": 93
+   "order": 93,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "_OUQYEvTmP8",
@@ -902,7 +1184,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 179,
-   "order": 94
+   "order": 94,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "tIl_1pzolAw",
@@ -911,7 +1196,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 177,
-   "order": 95
+   "order": 95,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "Oz0gLxMyY3Y",
@@ -920,7 +1208,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 255,
-   "order": 96
+   "order": 96,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "gmuN2TcpEXM",
@@ -929,7 +1220,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 208,
-   "order": 97
+   "order": 97,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "mO7z2MQtcuM",
@@ -938,7 +1232,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 266,
-   "order": 98
+   "order": 98,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "XstkNHJkMN4",
@@ -947,7 +1244,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 266,
-   "order": 99
+   "order": 99,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "1my7RXtzftM",
@@ -956,7 +1256,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 181,
-   "order": 100
+   "order": 100,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "aFZePefjIvs",
@@ -965,7 +1268,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 229,
-   "order": 101
+   "order": 101,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "Ksz4H2CimQM",
@@ -974,7 +1280,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 279,
-   "order": 102
+   "order": 102,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "mA8Ix6OJtgA",
@@ -983,7 +1292,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 203,
-   "order": 103
+   "order": 103,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "IG2OpCF7R1o",
@@ -992,7 +1304,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 170,
-   "order": 104
+   "order": 104,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "kxjny6zLsz8",
@@ -1001,7 +1316,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 206,
-   "order": 105
+   "order": 105,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "UtepMCnchLs",
@@ -1010,7 +1328,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 143,
-   "order": 106
+   "order": 106,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "FRM4S-7J0WM",
@@ -1019,7 +1340,10 @@
    "crate": "soul-60s",
    "decade": "60s",
    "seconds": 202,
-   "order": 107
+   "order": 107,
+   "size": 7,
+   "rpm": 45,
+   "kind": "7-inch 45"
   },
   {
    "id": "cDWa6ebhvlY",
@@ -1028,7 +1352,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 155,
-   "order": 108
+   "order": 108,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "elXxbqwnr6E",
@@ -1037,7 +1364,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 157,
-   "order": 109
+   "order": 109,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "X9UJLNfpdDA",
@@ -1046,7 +1376,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 168,
-   "order": 110
+   "order": 110,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "xtp04N-k_Fo",
@@ -1055,7 +1388,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 224,
-   "order": 111
+   "order": 111,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "Ee3ycBatINI",
@@ -1064,7 +1400,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 180,
-   "order": 112
+   "order": 112,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "-ze5UUXV_kQ",
@@ -1073,7 +1412,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 213,
-   "order": 113
+   "order": 113,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "T58mbSoFpJA",
@@ -1082,7 +1424,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 198,
-   "order": 114
+   "order": 114,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "EUZjOU2mv8o",
@@ -1091,7 +1436,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 172,
-   "order": 115
+   "order": 115,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "27Uy7s6dmJY",
@@ -1100,7 +1448,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 256,
-   "order": 116
+   "order": 116,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "CD9v8aQNWVg",
@@ -1109,7 +1460,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 191,
-   "order": 117
+   "order": 117,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "ns4GlLzUcN8",
@@ -1118,7 +1472,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 236,
-   "order": 118
+   "order": 118,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   },
   {
    "id": "gtdYuYddMVY",
@@ -1127,7 +1484,10 @@
    "crate": "dub",
    "decade": "80s",
    "seconds": 175,
-   "order": 119
+   "order": 119,
+   "size": 12,
+   "rpm": 33,
+   "kind": "LP cut"
   }
  ]
 }

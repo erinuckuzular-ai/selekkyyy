@@ -14,3 +14,10 @@ export const api = {
   played: (id: string) => post(`/api/play/${id}`).catch(() => {}),
   hot: () => j<{ track_id: string; count: number }[]>(fetch('/api/hot')).catch(() => []),
 };
+export interface Discogs { url?: string | null; title?: string | null; year?: number | null; label?: string | null; format?: string | null; lowest?: number | null; currency?: string; for_sale?: number; searchUrl: string; noToken?: boolean }
+export interface Score { nick: string; score: number; created_at: number }
+export const api2 = {
+  discogs: (id: string) => j<Discogs>(fetch(`/api/discogs/${id}`)),
+  scores: () => j<Score[]>(fetch('/api/scores')).catch(() => [] as Score[]),
+  score: (nick: string, score: number) => j<{ rank: number }>(post('/api/scores', { nick, score })),
+};

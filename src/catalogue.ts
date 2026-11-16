@@ -1,11 +1,11 @@
 import data from './data/catalogue.json';
 
-export interface Track { id: string; artist: string; title: string; crate: string; decade: string; seconds: number; order: number }
+export interface Track { id: string; artist: string; title: string; crate: string; decade: string; seconds: number; order: number; size: 7 | 10 | 12; rpm: 33 | 45 | 78; kind: string }
 export interface Crate { slug: string; name: string; blurb: string; color: string }
 
 export const channel = data.channel as { handle: string; url: string; id: string };
 export const crates: Crate[] = data.crates;
-export const tracks: Track[] = data.tracks;
+export const tracks = data.tracks as Track[];
 export const byId = new Map(tracks.map(t => [t.id, t]));
 export const crateBySlug = new Map(crates.map(c => [c.slug, c]));
 export const tracksIn = (slug: string) => tracks.filter(t => t.crate === slug);
