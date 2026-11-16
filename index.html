@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Selekkyyy — walk-in record shop</title>
+  <meta name="description" content="A free, non-profit record shop you can walk around. Soul, jazz, dub, disco and library music from the @selekkyyy crates. Listen, build a bag, share tunes.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Selekkyyy">
+  <meta property="og:title" content="Selekkyyy — walk-in record shop">
+  <meta property="og:description" content="Soul, jazz, dub, disco and library music. Listen free, build a bag, share tunes.">
+  <meta property="og:image" content="/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#2b1a10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="scene" aria-label="Record shop, 3D view"></canvas>
+    <div id="browse" class="browse" hidden></div>
+
+    <header class="top">
+      <a class="logo" href="/" data-link><span class="logo-disc" aria-hidden="true"></span>Selekkyyy</a>
+      <nav class="nav">
+        <button id="viewToggle" class="btn ghost" title="Switch between the 3D shop and a flat browse view">Browse</button>
+        <button id="radioBtn" class="btn ghost" title="Radio: shuffle the whole shop">Radio</button>
+        <button id="requestBtn" class="btn ghost" title="Ask for a tune">Requests</button>
+        <button id="bagBtn" class="btn amber" title="Your bag">Bag <span id="bagCount" class="count">0</span></button>
+      </nav>
+    </header>
+
+    <div id="hint" class="hint">Click a crate to dig. Drag to look around, scroll to move.</div>
+
+    <aside id="panel" class="panel" hidden></aside>
+    <aside id="bag" class="drawer" hidden></aside>
+    <div id="modal" class="modal" hidden></div>
+
+    <footer id="nowbar" class="nowbar" hidden>
+      <div class="deck" id="deck" title="Turntable">
+        <div class="platter"><div class="record"><div class="label"></div></div></div>
+        <div class="tonearm"></div>
+      </div>
+      <div class="now">
+        <div class="now-title" id="nowTitle">Nothing on the deck</div>
+        <div class="now-artist" id="nowArtist"></div>
+        <div class="progress" id="progress"><div class="bar" id="progressBar"></div></div>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" class="icon" title="Previous">⏮</button>
+        <button id="playBtn" class="icon big" title="Play / pause">▶</button>
+        <button id="nextBtn" class="icon" title="Next">⏭</button>
+        <button id="videoToggle" class="btn ghost small" title="Show or hide the video">Video</button>
+        <button id="shareNow" class="btn ghost small" title="Share this tune from the current time">Share @ time</button>
+      </div>
+    </footer>
+
+    <div id="ytwrap" class="ytwrap mini off"><div id="yt"></div></div>
+    <div id="toast" class="toast" hidden></div>
+    <div id="intro" class="intro">
+      <div class="intro-card">
+        <h1>Selekkyyy</h1>
+        <p class="tag">A walk-in record shop. Free, non-profit, community-run.<br>Soul, jazz, dub, disco and library music, all playing from the <a href="https://www.youtube.com/@selekkyyy" target="_blank" rel="noopener">@selekkyyy</a> crates.</p>
+        <div class="intro-actions">
+          <button id="enterBtn" class="btn amber large">Step inside</button>
+          <button id="browseBtn" class="btn ghost large">Just browse</button>
+        </div>
+        <p class="fine">Everything streams from YouTube. Nothing is sold. The bag turns into a YouTube playlist you can keep.</p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

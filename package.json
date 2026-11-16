@@ -1,0 +1,27 @@
+{
+  "name": "selekkyyy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Selekkyyy: a free, non-profit, walk-in record shop for the @selekkyyy YouTube crates.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "wrangler pages dev dist --d1 DB=selekkyyy --local",
+    "catalogue": "node data/build.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name selekkyyy",
+    "db:schema": "wrangler d1 execute selekkyyy --remote --file=schema.sql",
+    "db:schema:local": "wrangler d1 execute selekkyyy --local --file=schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261116.1",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "wrangler": "^4.163.0"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  }
+}

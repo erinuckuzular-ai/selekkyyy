@@ -1,0 +1,8 @@
+name = "selekkyyy"
+compatibility_date = "2025-11-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "selekkyyy"
+database_id = "d6a5abde-6e96-4ab4-a1a6-b16967433124"
